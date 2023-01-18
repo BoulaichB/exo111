@@ -34,3 +34,15 @@ document.querySelector('#secondaire h2').innerText = "Part 6 - Exercice 2";
 // # 5.
 // - Créer une nouvelle div #matiere
 // - Créer une liste ordonnée des 3 dernières choses que tu as appris
+
+const matiere = document.createElement('div');
+matiere.setAttribute('id', 'matiere');
+const ol = document.createElement('ol');
+let lastThings = ['JSON', 'git pull origin branchName', 'insertAdjacentElement'];
+for(let i = 0; i < 3; i++){
+    const li = document.createElement('li');
+    li.innerText = lastThings[i];
+    ol.appendChild(li);
+}
+matiere.appendChild(ol);
+document.body.appendChild(matiere);
