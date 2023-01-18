@@ -19,7 +19,9 @@ content.appendChild(paragraph);
 // - Créer un h1 
 // - Ajoute le texte suivant dedans "Le DOM - Création de HTML"
 // - Place le en premier enfant de la div #content
-
+const h1 = document.createElement('h1');
+h1.innerText = "Le DOM - Création de HTML";
+content.insertAdjacentElement("afterbegin", h1);
 
 // # 4.
 // - Prend le contenu de la div #content
