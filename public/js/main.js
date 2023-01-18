@@ -3,6 +3,11 @@
 // - Ajoute un h2 dedans
 // - Ajout le texte suivant au h2 "Part 6 - Exercice 1" 
 
+const content = document.getElementById('content');
+const h2 = document.createElement('h2');
+h2.innerText = "Part 6 - Exercice 1";
+content.appendChild(h2);
+
 // # 2.
 // - Créer un paragraphe avec du lorem ipsum
 // - Ajoute le apres le h2
