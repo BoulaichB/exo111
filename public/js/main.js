@@ -11,6 +11,9 @@ content.appendChild(h2);
 // # 2.
 // - Créer un paragraphe avec du lorem ipsum
 // - Ajoute le apres le h2
+const paragraph = document.createElement('p');
+paragraph.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, minus!";
+content.appendChild(paragraph);
 
 // # 3.
 // - Créer un h1 
