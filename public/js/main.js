@@ -27,6 +27,9 @@ content.insertAdjacentElement("afterbegin", h1);
 // - Prend le contenu de la div #content
 // - Copie le dans la div #secondaire
 // - Modifier Part 6 - Exercice 1 par Exercice 2 dans le h2 de la div secondaire
+const secondaire = document.getElementById('secondaire');
+secondaire.innerHTML = content.innerHTML;
+document.querySelector('#secondaire h2').innerText = "Part 6 - Exercice 2";
 
 // # 5.
 // - Créer une nouvelle div #matiere
